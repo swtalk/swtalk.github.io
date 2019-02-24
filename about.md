@@ -6,7 +6,7 @@ permalink: /about/
 
 <img src="{{ site.baseurl }}/assets/viewrain.jpg" title="Profile Picture" class="profile">
 
-<b>배움에는 끝이 없다고 생각하고, 항상 겸손한 자세로 1년을 3년같이 쓰려는 개발자 입니다.</b><br>
+**배움에는 끝이 없다고 생각하고, 항상 겸손한 자세로 1년을 3년같이 쓰려는 개발자 입니다.**<br>
 이슈가 생겼을때 밀려오는 짜증과 해결 했을때 밀려오는 쾌감의 경계를 즐깁니다^^;; 
 
 지금은 [NHN Entertainment][nhn] 클라우드인프라개발랩 에서 openstack 관련 인프라를 개발하고 있습니다. 
