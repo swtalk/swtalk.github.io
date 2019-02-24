@@ -54,7 +54,7 @@ descriptions:
   - cat: dummy
     desc: "Just some placeholder posts, lorem ipsum and the rest."
 
-  - cat: Java
+  - cat: java
     desc: "자바의 신 1,2권에 기록된 절대! 잊어선 안될 포스팅 기록"
 
 # Social icons and sharing options
@@ -191,4 +191,4 @@ protocols:
 
     os_repo: "https://github.com/bencentra/centrarium.com"
     os_rcs_type: "git"
-    os_src: "git@github.com:swtalk/centrarium.com.git"
+    os_src: "git@github.com:bencentra/centrarium.com.git"
