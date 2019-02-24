@@ -9,8 +9,8 @@ exclude:
   - "/vendor/"
 
 # Site settings
-title: viewRain
-subtitle: "기억은 기록을 지배하고, 포스팅은 두뇌를 지배한다."
+title: viewRain (박시우)
+subtitle: "Record governs memory"
 email: swtalk@naver.com
 name: 박시우
 description: >
