@@ -1,0 +1,32 @@
+---
+layout: post
+title:  "가장 많이 사용하는 String 클래스"
+date:   2019-02-24 21:09:00
+author: viewrain
+categories: JAVA
+---
+
+자바 개발을 할때, 가장많이 쓰는 클래스가 무었이냐 라고 묻는다면 <br>
+단연 String 을 떠올릴 것이다. 
+
+## String 의 구조
+{% highlight java %}
+public final class String extends Object
+  implements Serializable, Comparable<String>, CharSequence
+{% endhighlight %}
+
+누구나 알듯, Object 클래스를 확장한 모습이며, 인터페이스를 구현한 클래스이다. <br> 
+`String name = "viewrain";` <br>
+대부분의 경우 선언은 위와 같지만, 생성자가 많으므로 몇가지 외워야 할 점이 존재한다. <br> 
+
+## String 의 문자열을 byte로 변환
+| 리턴타입 | 메소드 이름 | 설명 | 
+| -- | -- | -- |
+| byte[] | getBytes() | 기본 캐릭터 셋의 바이트 배열을 생성 |
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
