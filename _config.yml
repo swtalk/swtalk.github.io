@@ -72,21 +72,21 @@ descriptions:
 social:
   - name: Facebook
     icon: facebook
-    username: 박시우
-    url: https://facebook.com/01099993449
+    username: 박시우 Facebook
+    url: https://www.facebook.com/mysw1113
     desc: Friend me on Facebook
     share: false
 
   - name: GitHub
     icon: github
-    username: swtalk
+    username: 박시우 Github
     url: https://github.com/swtalk
     desc: Fork me on GitHub
     share: false
 
   - name: LinkedIn
     icon: linkedin
-    username: siwoo Park
+    username: 박시우 Linkedin
     url: https://www.linkedin.com/in/siwoo-park-42922111b/
     desc: Connect with me on LinkedIn
     share: true
