@@ -1,0 +1,45 @@
+---
+layout: post
+title:  "더미파일 생성 (테스트용 GB 급 파일이 필요한경우) "
+date:   2019-02-27 20:19:00
+author: viewrain
+categories: linux
+---
+
+```$xslt
+업무과정에서 겪었던 단순하지만, 머리아픈 이슈를 공유합니다.  
+```
+<br> 
+* Storage 에 대한 개발자 테스트가 얼마 남지 않아, QA 조직에게 넘기기전 개발팀에서 직접 테스트 해보라는 랩장님의 말씀으로 <br> 
+직접 테스트를 진행하게 되었다. <br> 
+4GB 이상의 파일을 업로드하는 테스트를 진행해야 하는데, 도저히 파일을 구할수 없어 구글링 하던 도중 유용한 정보가 있어 기록에 남긴다.  
+
+## dummy file 생성
+* 파일 전송, 생성, 삭제 등의 테스트를 수행 할 경우 대용량의 Dummy 파일을 생성한다. 
+
+## Linux 
+* 맥 사용자 이므로, 리눅스가 친숙하다.  terminal app 아무거나에서 바로 실행가능
+{% highlight java %}
+dd if=/dev/zero of=test bs=402410000 count=10
+* (블록사이즈 X 반복) 크기 > dev/zero 에서 읽어 파일을 생성 
+{% endhighlight %}
+<br> 
+```angular2html
+<결과>
+10+0 records in
+10+0 records out
+4024100000 bytes transferred in 3.155591 secs (1275228629 bytes/sec) 
+```
+
+## Windows
+* 윈도우도 검색해보니 잘 나온다. 
+
+{% highlight java %}
+fsutil file createnew <파일이름 > <길이>
+* 예시 : fsutil file createnew c:\test.txt 1000
+{% endhighlight %}
+<br> 
+
+단순하지만, 상당히 유용하게 써서 포스팅하므로, 누구든 유용하게 테스트 했으면 한다. <br> 
+( 다음에 또 쓸일이 있겟지...)
+ 
