@@ -24,7 +24,7 @@ categories: java
 * ArrayList 의 상속 관계
 * Java.lang.Object
     * ㄴJava.util.AbstractCollection <E>
-        * ㄴjava.util.AbstractList <E>
+        * ㄴjava.util.AbstractList <E> 
             * ㄴjava.util.ArrayList <E>
 
 
