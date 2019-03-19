@@ -5,6 +5,7 @@ permalink: /about/
 ---
 
 <img src="{{ site.baseurl }}/assets/viewrain.jpg" title="Profile Picture" class="profile">
+![image](/assets/main.JPG)
 <br>
 * 배움에는 끝이 없다고 생각하고, 항상 겸손한 자세로 하루를 1년같이 쓰려는 개발자 입니다.
 * 이슈가 생겼을때 밀려오는 짜증과 해결 했을때 다가오는 쾌감의 경계를 즐깁니다^^;; 
@@ -17,7 +18,7 @@ permalink: /about/
 <br>
 * 모든 게시글에 대한 저작권은 [swtalk.github.io][swtalk] 에 존재합니다. 
 
-![image](/assets/main.JPG)
+
 [nhn]: https://www.nhnent.com/ko/index.nhn
 [centrarium]: http://jekyllthemes.org/themes/centrarium/
 [swtalk]: https://swtalk.github.io
