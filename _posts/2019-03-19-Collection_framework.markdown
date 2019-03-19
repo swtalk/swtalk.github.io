@@ -19,7 +19,6 @@ categories: java
 * collection framework 은 그림에서 처럼 2개의 그룹으로 구분된다.
   * java.util.Collection
   * java.util.Map
-![image](/assets/nomad.JPG)
 ## 핵심 인터페이스 (Data Structure 관점)
 * List
   * 순서 있는 데이터 집합
