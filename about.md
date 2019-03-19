@@ -5,7 +5,7 @@ permalink: /about/
 ---
 
 
-![image](/assets/viewview.JPG)
+![image](/assets/viewview_size.JPG)
 <br>
 * 배움에는 끝이 없다고 생각하고, 항상 겸손한 자세로 하루를 1년같이 쓰려는 개발자 입니다.
 * 이슈가 생겼을때 밀려오는 짜증과 해결 했을때 다가오는 쾌감의 경계를 즐깁니다. 
