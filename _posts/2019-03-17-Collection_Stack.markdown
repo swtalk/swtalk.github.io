@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Collection! Stack 클래스"
+title:  "Collection.list.Stack 클래스"
 date:   2019-03-17 17:04:00
 author: viewrain
 categories: java

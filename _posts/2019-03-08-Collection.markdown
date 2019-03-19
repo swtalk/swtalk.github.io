@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Collection! ArrayList 클래스"
+title:  "Collection.list.ArrayList 클래스"
 date:   2019-03-08 21:04:00
 author: viewrain
 categories: java
