@@ -17,6 +17,7 @@ permalink: /about/
 <br>
 * 모든 게시글에 대한 저작권은 [swtalk.github.io][swtalk] 에 존재합니다. 
 
+![image](/assets/main.JPG)
 [nhn]: https://www.nhnent.com/ko/index.nhn
 [centrarium]: http://jekyllthemes.org/themes/centrarium/
 [swtalk]: https://swtalk.github.io
