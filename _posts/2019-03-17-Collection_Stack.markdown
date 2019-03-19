@@ -19,9 +19,8 @@ categories: java
 * Stack 클래스는 List 컬렉션 클래스의 Vector 클래스를 상속받아, 전형적인 스택 메모리 구조의 클래스를 제공한다. 
 * 스택 메모리 구조는 선형 메모리 공간에 데이터를 저장하면서 LIFO의 시멘틱을 따르는 자료구조 이다.
   * 생성자 : Stack() <- 아무 데이터도 없는 Stack 객체를 만듬 
+  
 ![image](/assets/Postingimg/stack.png)
-* 출처 : TCPSCHOOL.com 
-    
 
 * Stack 의 상속 관계
 * Java.lang.Object
@@ -79,3 +78,5 @@ public class checkStack {
 * 정리하면, Stack 클래스는 List 컬렉션 클래스의 Vector 클래스를 상속받은 클래스 이고 LIFO 시멘틱을 따르는 자료구조이다. 
 * Got it??
 
+### Reference
+* TCPSCHOOL.com 
