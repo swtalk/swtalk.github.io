@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "intellij font not showing"
+title:  "Intellij font not showing"
 date:   2019-03-24 23:59:00
 author: viewrain
-categories: IDE
+categories: Experience know-how
 ---
 ```concordion
 삽질기, 어디서든 알게된 디지털유목민 스타일의 노하우를 기록합니다.
