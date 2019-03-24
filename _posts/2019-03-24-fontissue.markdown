@@ -3,12 +3,12 @@ layout: post
 title:  "Intellij font not showing"
 date:   2019-03-24 23:59:00
 author: viewrain
-categories: Experience know-how
+categories: Experience
 ---
 ```concordion
 삽질기, 어디서든 알게된 디지털유목민 스타일의 노하우를 기록합니다.
 ```
-## 개요
+## Why posting?
 
 * `format`은 3개월에 한번씩은 해야한다는 주의지만.. 이것저것 백업할 일 때문에 미루고 미루다가 오늘 포맷!
   * IDE 셋팅을 저장을 안해놓은 ㅠㅠ 말도안되는 상황이긴 함
