@@ -16,21 +16,21 @@ categories: java
 # 개요
 ## java.util.StringTokenizer
 * 생성자의 종류를 보면 알수 있듯, 내입맛대로 쪼갤수 있고, 혹은 지정된 구분자, 혹은 default 인 띄어쓰기를 이용할 수 있다.
-  * 생성자
+  * **생성자**
     * StringTokenizer(String str)
     * StringTokenizer(String str, String delim)
     * StringTokenizer(String str, String delim, boolean returnDelims) # 쓸일이 있을지..
 
-* 이러한 생성자로 만든 객체는 hasMoreTokens() 나 hasMoreElementgs() 메소드를 이용해 다음값으로 넘길 수 있다.
-  * 좀더 심도있게 말하면, 다음 Token 값을 확인 하고, nextToken() 이나 nextElement() 메소드로 다음 Token 을 받을 수 있다.
+* 이러한 생성자로 만든 객체는 `hasMoreTokens()` 나 `hasMoreElementgs()` 메소드를 이용해 다음값으로 넘길 수 있다.
+  * 좀더 심도있게 말하면, 다음 Token 값을 확인 하고, `nextToken()` 이나 `nextElement()` 메소드로 다음 Token 을 받을 수 있다.
 
 ## split()
-* 책에서도 나와있듯, StringTokenizer 보단 split을 사용하길 권장한다. (실제 java documents에도..)
-* 단 아주 큰 문자열을 다루고, 앞에 있는 일부 값만 처리해야 할 경우 split을 사용하면, 메모리 낭비가 심하므로, 피해야 한다.
+* 책에서도 나와있듯, StringTokenizer 보단 split을 사용하길 권장한다. (실제 `java documents`에도..)
+* 단 아주 큰 문자열을 다루고, 앞에 있는 일부 값만 처리해야 할 경우 split을 사용하면, `메모리 낭비가 심하므로`, 피해야 한다.
 
 
 # 구현
-* StringTokenizer
+### StringTokenizer
 {% highlight java %}
 import java.util.StringTokenizer;
 
@@ -52,7 +52,7 @@ public class Splits {
 
 {% endhighlight %}
 
-* split()
+### split()
 {% highlight java %}
 private void sampleSplit(String tmp){
     String[] splitString = tmp.split(" ");
