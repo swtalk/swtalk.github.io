@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Thread"
+title:  "Thread "
 date:   2019-05-06 11:33:00
 author: viewrain
 categories: java
@@ -16,16 +16,18 @@ categories: java
 * 프로그램을 `실행` 시켜서, 동작하게 만들면 이것을 `프로세스`라 한다.
 * 해당 프로세스는 각각 하나의 처리 경로를 가지고 있고, 직렬적이다.
   * 어떠한 일을 수행하는 것에 있어, 개발자가 원하는 순서대로 일처리를 하지만, 순서에 상관없이 동시에 처리하고 싶을때 Thread(스레드) 를 이용한다.
+
 ## Thread ?
 * 하나의 프로세스 내부에서 독립적으로 실행되는 하나의 작업 단위를 말하며, 세부적으로는 운영체제에 의해 관리되는 하나의 작업 혹은 태스크를 의미
-  * 1. JVM에 의해 하나의 프로세스가 발생하고 main( ) 안의 실행문 들이 하나의 스레드이다.
-  * 2. main( ) 이외의 또 다른 스레드를 만들려면 Thread 클래스를 상속하거나 Runnable 인터페이스를 구현한다.
-  * 3. 다중 스레드 작업 시에는 각 스레드 끼리 정보를 주고받을 수 있어 처리 과정의 오류를 줄일 수 있다.
-  * 4. 프로세스끼리는 정보를 주고받을 수 없다.
+  * JVM에 의해 하나의 프로세스가 발생하고 main( ) 안의 실행문 들이 하나의 스레드이다.
+  * main( ) 이외의 또 다른 스레드를 만들려면 Thread 클래스를 상속하거나 Runnable 인터페이스를 구현한다.
+  * 다중 스레드 작업 시에는 각 스레드 끼리 정보를 주고받을 수 있어 처리 과정의 오류를 줄일 수 있다.
+  * 프로세스끼리는 정보를 주고받을 수 없다.
 
 ### Extends Thread
 * Java Thread 를 구동하는 것중 대표적인건 Thread 클래스를 상속받는 것이다.
-### 구현
+
+#### 구현
 {% highlight java %}
 /* 간단한 쓰레드 프로그램 */
 import java.util.Random;
@@ -61,7 +63,7 @@ public class ThreadTest extends Thread {
 }
 {% endhighlight %}
 
-### 결과
+#### 결과
 {% highlight java%}
 Start main method.
 0번 쓰레드 동작 중...
@@ -90,11 +92,13 @@ End main method.
 * 여기서 main() 메소드가 자신이 실행 시킨 쓰레드들이 종료가 되지 않았음에도 먼저 끝나버리는 것을 볼 수 있다.
 * 조금만 코드를 바꿔서, index 변수를 프로그램 마지막에 출력해 보도록 하자. (10을 예상)
 
+#### 구현
+
 {%highlight java%}
 /* 간단한 쓰레드 프로그램(변경 1) */
 import java.util.Random;
 public class ThreadTest extends Thread {
-	// index 변수를 추가해서 스레드가 동작시에 해당 변수를 증가시키도록 할겁니다.
+	// index 변수를 추가해서 스레드가 동작시에 해당 변수를 증가시키도록 할것이다.
 	private static int index = 0;
 
 	private int id = -1;
@@ -107,7 +111,7 @@ public class ThreadTest extends Thread {
 		try {
 			long s = r.nextInt(3000); // 3초내로 끝내자.
 			Thread.sleep(s); // 쓰레드를 잠시 멈춤
-			index++; // index 변수를 증가시킵니다.
+			index++; // index 변수를 증가
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
@@ -124,13 +128,14 @@ public class ThreadTest extends Thread {
 			test.start(); // 이 메소드를 실행하면 Thread 내의 run()을 수행한다.
 		}
 
-		System.out.println("current Index: "+ index); // index의 값을 반환합니다.
+		System.out.println("current Index: "+ index); // index의 값을 반환
 		System.out.println("End main method.");
 	}
 }
 {% endhighlight java%}
 
-### 결과
+#### 결과
+
 {%highlight java%}
 ain method.
 0번 쓰레드 동작 중...
@@ -159,6 +164,8 @@ End main method.
 
 * 원하는대로 동작하지 않음을 확인 할 수 있다. 제멋대로 thread 가 종료되고 main 메소드도 thread 이므로, 뒤죽박죽이다.
 
+#### 구현
+
 {%highlight java%}
 /* 간단한 쓰레드 프로그램(변경 2) */
 import java.util.Random;
@@ -176,7 +183,7 @@ public class ThreadTest extends Thread {
 		try {
 			long s = r.nextInt(3000); // 3초내로 끝내자.
 			Thread.sleep(s); // 쓰레드를 잠시 멈춤
-			index++; // index 변수를 증가시킵니다.
+			index++; // index 변수를 증가
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
@@ -194,12 +201,12 @@ public class ThreadTest extends Thread {
 		}
 
 		try {
-			Thread.sleep(5000); // 쓰레드가 종료할 때까지의 충분한 시간을 기다립니다.
+			Thread.sleep(5000); // 쓰레드가 종료할 때까지의 충분한 시간을 기다림
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
 
-		System.out.println("current Index: "+ index); // index의 값을 반환합니다.
+		System.out.println("current Index: "+ index); // index의 값을 반환
 		System.out.println("End main method.");
 	}
 }
@@ -207,7 +214,7 @@ public class ThreadTest extends Thread {
 * 아까와 다르게 메인 메소드 내에서 sleep() 메소드를 추가하였다.
 * 프로그램 내에서 쓰레드가 3초 내로 끝난다는 것을 알고 있기 때문에 일부러 메인 메소드에선 5초를 멈추게 했다.
 
-### 결과
+#### 결과
 ```
 Start main method.
 0번 쓰레드 동작 중...
@@ -245,7 +252,6 @@ End main method.
 import java.util.ArrayList;
 import java.util.Random;
 public class ThreadTest extends Thread {
-	// index 변수를 추가해서 스레드가 동작시에 해당 변수를 증가시키도록 할겁니다.
 	private static int index = 0;
 
 	private int id = -1;
@@ -281,13 +287,13 @@ public class ThreadTest extends Thread {
 
 		for(int i = 0 ; i < threadList.size(); i++){
 			try {
-				threadList.get(i).join(); // 쓰레드의 처리가 끝날때까지 기다립니다.
+				threadList.get(i).join(); // 쓰레드의 처리가 끝날때까지 기다린다.
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
 		}
 
-		System.out.println("current Index: "+ index); // index의 값을 반환합니다.
+		System.out.println("current Index: "+ index); // index의 값을 반환
 		System.out.println("End main method.");
 	}
 }
@@ -295,7 +301,7 @@ public class ThreadTest extends Thread {
 
 * 추가가 된 것은 threadList에 쓰레드를 삽입하고 이후 threadList를 순회하며 각 쓰레드에서 join() 메소드를 실행시켜주는 것이다.
 
-### 결과
+#### 결과
 ```
 Start main method.
 0번 쓰레드 동작 중...
@@ -330,7 +336,6 @@ End main method.
 import java.util.ArrayList;
 import java.util.Random;
 public class ThreadTest extends Thread {
-	// index 변수를 추가해서 스레드가 동작시에 해당 변수를 증가시키도록 할겁니다.
 	private static int index = 0;
 
 	private int id = -1;
@@ -376,7 +381,7 @@ public class ThreadTest extends Thread {
 			}
 		}
 
-		System.out.println("current Index: "+ index); // index의 값을 반환합니다.
+		System.out.println("current Index: "+ index); // index의 값을 반환
 		System.out.println("End main method.");
 	}
 }
