@@ -7,7 +7,6 @@ gems:
 
 plugins:
   - jekyll-archives
-  -
 exclude:
   - "/vendor/"
 
