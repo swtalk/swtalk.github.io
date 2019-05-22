@@ -183,6 +183,6 @@ protocols:
 
     twitter_image: "/assets/cropped-V-Com-Favicon.png"
 
-    os_repo: "https://github.com/bencentra/centrarium.com"
+    os_repo: "https://github.com/swtalk"
     os_rcs_type: "git"
-    os_src: "git@github.com:bencentra/centrarium.com.git"
+    os_src: "git@github.com:swtalk/swtalk.github.io.com.git"
