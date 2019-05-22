@@ -51,12 +51,11 @@ disqus_shortname: viewrain
 
 # Category descriptions (for archive pages)
 descriptions:
-  - cat: jekyll
-    desc: "Posts describing Jekyll setup techniques."
-
-  - cat: dummy
-    desc: "Just some placeholder posts, lorem ipsum and the rest."
-
+#  - cat: jekyll
+#    desc: "Posts describing Jekyll setup techniques."
+#
+#  - cat: dummy
+#    desc: "Just some placeholder posts, lorem ipsum and the rest."
   - cat: java
 #    desc: "Just some placeholder posts, lorem ipsum and the rest."
 
