@@ -33,7 +33,7 @@ highlightjs_theme: "monokai-sublime"
 
 # Archive settings (see https://github.com/jekyll/jekyll-archives/)
 jekyll-archives:
-  enabled:
+  disable:
     - categories
     - tags
   layout: 'archive'
@@ -56,13 +56,13 @@ descriptions:
     desc: "Just some placeholder posts, lorem ipsum and the rest."
 
   - cat: java
-    desc: "Just some placeholder posts, lorem ipsum and the rest."
+#    desc: "Just some placeholder posts, lorem ipsum and the rest."
 
   - cat: linux
-    desc: "Just some placeholder posts, lorem ipsum and the rest."
+#    desc: "Just some placeholder posts, lorem ipsum and the rest."
 
   - cat: experience
-    desc: "Just some placeholder posts, lorem ipsum and the rest."
+#    desc: "Just some placeholder posts, lorem ipsum and the rest."
 
 social:
   - name: Facebook
