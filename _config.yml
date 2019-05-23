@@ -57,13 +57,9 @@ descriptions:
 #  - cat: dummy
 #    desc: "Just some placeholder posts, lorem ipsum and the rest."
   - cat: java
-#    desc: "Just some placeholder posts, lorem ipsum and the rest."
-
   - cat: linux
-#    desc: "Just some placeholder posts, lorem ipsum and the rest."
-
   - cat: experience
-#    desc: "Just some placeholder posts, lorem ipsum and the rest."
+  - cat: Spring
 
 social:
   - name: Facebook

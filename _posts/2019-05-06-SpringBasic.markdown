@@ -6,13 +6,6 @@ author: viewrain
 categories: spring
 ---
 
-```$xslt
-이 포스팅은 자바의 신 1,2권의 내용으로 포스팅 되었습니다. 
-```
-
-# 개요
-> Spring 의 기초를 정리한다. 
-
 ## Spring 기초
 ### Spring 정의 
 * 자바 엔터프라이즈 개발을 편하게 해주는 오픈소스 경량급 애플리케이션 프레임워크
@@ -46,7 +39,7 @@ categories: spring
 * Spring 을 쓰기전엔 개발자가 프로그램의 흐름 (어플리케이션 코드) 를 직접 제어했다. 하지만 Spring 에서는 Framework 가 주도하게 된다.
     * 객체의 생명 주기 자체를 컨테이너가 맡아서 한다.  제어권이 컨테이너로 넘어가게 되고, 제어의 흐름이 바뀌었다 하여, IoC (제어의 역전) 이라 부름 
     * 제어의 흐름이 Framework 로 변경됨에 따라 DI(의존성 주입) , AOP(관점지향프로그래밍) 등이 가능해짐 
-        * 역으로 제어권이 없다면 @Autowired 를 통한 의존성 주입등이 불가능해진다. 
+        * 역으로 제어권이 없다면 `@Autowired` 를 통한 의존성 주입등이 불가능해진다. 
 ![image](/assets/Postingimg/springioc.png)
     * DI (Dependency Injection)
         * 객체간의 의존성을 자신이 아닌 외부에서 주입하는 개념
@@ -86,7 +79,7 @@ class MessageBeanKR {
     * setter 를 이용한 의존성 주입 
     * 초기화 인터페이스를 이용한 의존성 주입 
 
-* 초기화 인터페이스를 이용한 의존성 주읩의 예시 
+* 초기화 인터페이스를 이용한 의존성 주입의 예시 
 {% highlight java%}
 package com.toast.cloud.iaas.gauge.DTO;
 
