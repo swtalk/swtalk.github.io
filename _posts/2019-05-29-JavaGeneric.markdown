@@ -188,11 +188,11 @@ public class GenericSample2 {
 ## 제네릭 타입의 이름
 * \<T\> 라고 적혀있는 부분은 사실 아무거나 써도 상관없다.. 단 개발자들의 컨벤션이 존재하기 마련이고.. 제네릭 또한 다음과 같이 사용한다. 
 
-E : 요소 (Element)
-K : 키 (Key) 
-N : 숫자 (Number) 
-T : 타입 (Type) 
-V : 값 (Value) 
+E : 요소 (Element) <br>
+K : 키 (Key) <br>
+N : 숫자 (Number) <br>
+T : 타입 (Type) <br>
+V : 값 (Value) <br>
 S,U,V : 두번째, 세번째, 네번째에 선언된 타입 
 
 
