@@ -208,8 +208,9 @@ public void wildcardMethod(WildcardGeneric<?> c) {
 {% endhighlight %}
 
 ## 제한이 있는 Wildcard 타입
+
 * 아무런 제약이 없는 <?> 는 어떤 타입도 올 수 있으므로, 타입에 제한을 걸어둠
-* <? extends TypeName> 과 같이 TypeName 클래스를 확장한 모든 클래스를 의미한다. 
+  * <? extends TypeName> 과 같이 TypeName 클래스를 확장한 모든 클래스를 의미한다. 
 {% highlight java%}
 public void boundedWildcardMethod(WildcardGeneric <? extends Car> c) {
     Car value = c.getWildcard();
@@ -240,6 +241,7 @@ public class GenericWildcardSample {
     }
 }
 {% endhighlight %}
+
 * genericMethod() 의 선언부를 보면 <T> 를 써서 제네릭하게 메소드를 선언했다. 
     * 또한 매개변수를 보면 T 타입의 addValue 객체도 받고 있으며, 메소드 안에서 c의 값을 addvalue 로 정해주고 있다. 
     * 여기서 T 또한 범위를 설정 해 줄수 있다. 
