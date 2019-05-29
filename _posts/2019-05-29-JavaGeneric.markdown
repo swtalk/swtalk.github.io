@@ -15,12 +15,14 @@ categories: java
 * 자바의 제네릭(Generic) 은 형 변환시에 발생 할 수 있는 문제들을 사전에 없애기 위해 만든것 (Java 5 부터 지원) 
     * 다양한 타입의 객체들을 다루는 Method 나 Collection 클래스에 컴파일 시 `타입체크`를 해주는 기능 
     * 클래스 내부에서 사용할 데이터 타입을 나중에 인스턴스화 할 때 확정짓는 것
+<br>
 
 ## 구현방식
 * public class 클래스명 <T> { ... }
 * public interface 인터페이스명 <T> { ... }
 
 * 자바 모든 클래스의 최상위 부모 클래스는 Object 클래스 이므로, 어떤 타입이든 기본 데이터 타입을 객체화 시킨 wrapperType 의 객체를 대입 받을 수 있다. 
+<br>
 
 ## 구현
 * ViewrainDefault.java
@@ -77,13 +79,14 @@ public class Main {
 강제 타입변환이 발생하지 않는다. 
 * 즉 인스턴스화 시 ViewrainGeneric<String> 으로 String 타입을 지정해 주었다. 
     * 이렇게 함으로, 클래스 내부적으로 T 제네릭 타입은 String 으로 자동 재구성 된다. 
-
+<br>
 
 ## 이유
 Generic 이 없다면, 데이터 타입에 맞는 매번 새로운 클래스 또는 메소드를 작성해야 한다. 
 * setObject 메소드를 부른다고 가정할때, 매번 데이터 타입에 맞는 메소드를 구현해야 한다. ㅠ.ㅠ
 
 * 반복적인 코드 절약, 코드의 재사용성을 높여주는 이점을 취할 수 있어 사용이 용이하다. 
+<br>
 
 ## 또하나의 예시
 {% highlight java%}
@@ -184,6 +187,7 @@ public class GenericSample2 {
 {% endhighlight %}
 * 이전 예제에 설명한 것처럼 객체를 인스턴스화 할때 이미 타입을 명시해 주고 있다. 
 
+<br>
 
 ## 제네릭 타입의 이름
 * \<T\> 라고 적혀있는 부분은 사실 아무거나 써도 상관없다.. 단 개발자들의 컨벤션이 존재하기 마련이고.. 제네릭 또한 다음과 같이 사용한다. 
@@ -195,6 +199,7 @@ T : 타입 (Type) <br>
 V : 값 (Value) <br>
 S,U,V : 두번째, 세번째, 네번째에 선언된 타입 
 
+<br>
 
 ## 제네릭의 Wildcard 타입
 * 메소드 선언시 제네릭 타입의 제한을 해소하기 위해 특정 타입 대신 <?> 를 사용
@@ -206,6 +211,7 @@ public void wildcardMethod(WildcardGeneric<?> c) {
     System.out.println(value);
 }
 {% endhighlight %}
+<br>
 
 ## 제한이 있는 Wildcard 타입
 
@@ -217,6 +223,7 @@ public void boundedWildcardMethod(WildcardGeneric <? extends Car> c) {
     System.out.println (value);
 } 
 {% endhighlight %}
+<br>
 
 ## 제네릭한 메소드 선언
 * wildcard 사용시에는 매개 변수로 넘어온 타입을 변경할 수 없다. 
@@ -249,7 +256,7 @@ public class GenericWildcardSample {
     * 한 메소드에서 두개 이상의 제네릭 타입을 매개변수로 받을 때는 , (쉼표) 로 구분해 주면 된다. 
         * public <S, T extends Car> void genericMethod(WildCard Generic❮?❯ c, T addValue1, S addValue2)
 
-
+<br>
 
 ## Refference
 * https://onsil-thegreenhouse.github.io/programming/java/2018/02/17/java_tutorial_1-21/
