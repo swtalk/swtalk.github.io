@@ -4,6 +4,7 @@ gems:
 #  - jekyll-archives # Sorry, not GitHub pages friendly!
   - jekyll-sitemap
   - jekyll-paginate
+  - jekyll-archives
 
 plugins:
   - jekyll-archives
@@ -16,7 +17,7 @@ subtitle: "Record governs memory"
 email: swtalk@naver.com
 name: 박시우
 description: >
-  기억은 기록을 지배하고, 포스팅은 두뇌를 지배한다.
+  가장 행복한 나를 꿈꾸며..
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
