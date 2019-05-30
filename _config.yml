@@ -8,6 +8,7 @@ gems:
 
 plugins:
   - jekyll-archives
+  - jekyll-category-pages
 
 exclude:
   - "/vendor/"
