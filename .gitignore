@@ -6,3 +6,11 @@ _site
 .jekyll-metadata
 
 Gemfile.lock
+
+.idea/sonarlint
+
+.idea/swtalk.github.io.iml
+
+.idea/vcs.xml
+
+.idea/
